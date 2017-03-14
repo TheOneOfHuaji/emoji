@@ -1,0 +1,79 @@
+#define top()
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页 - 滑稽图</title>
+ 	<link rel="stylesheet" href="/static/jquery/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/jquery/css/font-awesome/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/jquery/css/style.css" id="theme-styles">
+	<link rel="stylesheet" type="text/css" href="/static/jquery/css/head.css">
+	<script type="text/javascript" src="/static/jquery/js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<div class="header">
+	<div class="headerinner">
+		<ul class="headernav">
+			<li class="logo">
+				<img src="/static/img/huiyuan1.png" alt="滑稽图" />
+			</li>
+			<li><a href="/" >首页</a></li>
+			<li><a href="/blog">博客</a></li>
+			<li><a href="#">热门图</a></li>
+			<li><a href="#" >QQ表情</a></li>
+			<li><a href="#">搞笑</a></li>
+			<li><a href="#" >打赏我们</a></li>
+			<li class="search">
+				<a class="search_pic"></a>
+			</li>
+			<li class="list">
+				<a></a>
+			</li>
+		</ul>
+		<!-- 搜索 -->
+		<form action="">
+			<div class="search_main">
+				<button class="search_btn" type="submit"></button>
+				<input class="search_text" type="text" placeholder="搜索">
+				<span class="close_btn"></span>
+			</div>
+		</form>
+		<!-- 会员登录 -->
+		<div class="member">
+			<p>会员中心</p>
+			<ul>
+				<li>
+					<img src="/static/img/huiyuan1.png" alt="">
+					<a href="login.html">登录</a>
+				</li>
+				<li>
+					<img src="/static/img/huiyuan1.png" alt="">
+					<a href="register.html">新会员注册</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+$(function(){
+	/*搜索*/
+	$(".search_pic").click(function(){
+		$(".headernav").fadeOut(500);
+		$(".search_main").fadeIn(1000);
+	});
+	$(".search_main .close_btn").click(function(){
+		$(".search_main").fadeOut(500);
+		$(".headernav").fadeIn(1000);
+	});
+	/*登录*/
+	$(".list a").click(function(){
+		$(".member").slideToggle(500);
+	});
+
+});
+</script>
+#@main()
+</body>
+</html>
+#end
