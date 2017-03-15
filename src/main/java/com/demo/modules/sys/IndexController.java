@@ -12,6 +12,22 @@ public class IndexController extends Controller {
 	public void index() {
 		render("/WEB-INF/modules/sys/index.html");
 	}
+	
+	public void picture() {
+		render("/WEB-INF/modules/sys/picture.html");
+	}
+	
+	public void about() {
+		render("/WEB-INF/modules/sys/about.html");
+	}
+	
+	public void contact() {
+		render("/WEB-INF/modules/sys/contact.html");
+	}
+	
+	public void construct() {
+		render("/WEB-INF/modules/sys/construct.html");
+	}
 }
 
 

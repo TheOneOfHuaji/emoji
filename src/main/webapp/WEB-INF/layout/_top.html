@@ -3,27 +3,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>首页 - 滑稽图</title>
- 	<link rel="stylesheet" href="/static/jquery/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/jquery/css/font-awesome/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/static/jquery/css/style.css" id="theme-styles">
+<title>滑稽图-个人分享站</title>
+	<link rel="stylesheet" type="text/css" href="/static/jquery/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/static/jquery/css/head.css">
+    <link rel="stylesheet" href="/static/jquery/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/jquery/css/google_font.css">
+ 	<link rel="stylesheet" href="/static/jquery/css/bootstrap.min.css">
 	<script type="text/javascript" src="/static/jquery/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="/static/jquery/js/google_jquery_min.js"></script>
+    <link rel="stylesheet" href="/static/jquery/css/style.css" id="theme-styles">
 </head>
 <body>
 <div class="header">
 	<div class="headerinner">
-		<ul class="headernav">
+		<ul class="headernav" style="list-style-type:none;">
 			<li class="logo">
 				<img src="/static/img/huiyuan1.png" alt="滑稽图" />
 			</li>
-			<li><a href="/" >首页</a></li>
-			<li><a href="/blog">博客</a></li>
-			<li><a href="#">热门图</a></li>
-			<li><a href="#" >QQ表情</a></li>
-			<li><a href="#">搞笑</a></li>
-			<li><a href="#" >打赏我们</a></li>
+			<li><a href="/" >博客</a></li>
+			<li><a href="/picture">分享图片</a></li>
+			<li><a href="/about">关于</a></li>
+			<li><a href="/construct" >QQ表情</a></li>
+			<li><a href="/construct">笑话</a></li>
+			<li><a href="/contact" >联系我们</a></li>
 			<li class="search">
 				<a class="search_pic"></a>
 			</li>
@@ -45,11 +47,11 @@
 			<ul>
 				<li>
 					<img src="/static/img/huiyuan1.png" alt="">
-					<a href="login.html">登录</a>
+					<a href="/construct">后台登录</a>
 				</li>
 				<li>
 					<img src="/static/img/huiyuan1.png" alt="">
-					<a href="register.html">新会员注册</a>
+					<a href="/construct">关于</a>
 				</li>
 			</ul>
 		</div>
@@ -74,6 +76,46 @@ $(function(){
 });
 </script>
 #@main()
+<footer>
+        <div class="widewrapper footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer-widget">
+                        <h3> <i class="fa fa-user"></i>About</h3>
+
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi laboriosam nostrum consequatur fugiat at, labore praesentium modi, quasi dolorum debitis reiciendis facilis, dolor saepe sint nemo, earum molestias quas.</p>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, error aspernatur assumenda quae eveniet.</p>
+                    </div>
+
+                    <div class="col-md-4 footer-widget">
+                        <h3> <i class="fa fa-pencil"></i> Recent Post</h3>
+                        <ul class="clean-list">
+                            <li><a href="">Clean - Responsive HTML5 Template</a></li>
+                            <li><a href="">Responsive Pricing Table</a></li>
+                            <li><a href="">Yellow HTML5 Template</a></li>
+                            <li><a href="">Blackor Responsive Theme</a></li>
+                            <li><a href="">Portfolio Bootstrap Template</a></li>
+                            <li><a href="">Clean Slider Template</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 footer-widget">
+                        <h3> <i class="fa fa-envelope"></i>Contact Me</h3>
+
+                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil fugiat, cupiditate veritatis excepturi tempore explicabo.</p>
+                         <div class="footer-widget-icon">
+                            <i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-google"></i>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="widewrapper copyright">
+                Copyright 2015
+        </div>
+    </footer>
 </body>
 </html>
 #end

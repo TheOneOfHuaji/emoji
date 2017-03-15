@@ -470,6 +470,7 @@ The list with special bullet points, used both on blog widgets as well as in the
 =================*/
 .clean-list {
   list-style: none;
+  PADDING-LEFT: 40PX;
 }
 
 .clean-list li {

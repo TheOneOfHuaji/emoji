@@ -71,6 +71,7 @@ public class DemoConfig extends JFinalConfig {
 		me.addSharedFunction("/WEB-INF/layout/_layout.html");
 		me.addSharedFunction("/WEB-INF/layout/_paginate.html");
 		me.addSharedFunction("/WEB-INF/layout/_top.html");
+		me.addSharedFunction("/WEB-INF/layout/_chest.html");
 	}
 	
 	/**
